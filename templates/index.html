@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Redis Cache</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widthdevice-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- Localizer Integration Code >
+		<script type="text/javascript" src="https://localizercdn.com/localizer.js"></script>
+		<script>
+		    Localizer.init({
+		        siteId: 765518341,
+		        cacheall: true,
+		        detectnew: true
+		    });
+		</script> -->
+
+	
+</head>
+
+
+<body id="myPage">
+
+<h2 align = "center">Redis Cache Driver Page </h2> 
+<br/>
+		<br/>
+		<br/>
+
+<div class = "row">
+
+	<div class="col-md-2">
+	</div>
+
+	<div class = "col-md-4" >
+	<form action="./app/image_sjsu">
+		<input type="submit" class="btn btn-primary" value="Image SJSU">  </input>
+		</form>
+		<br/>
+		<br/>
+		<br/>
+			<form action="./app/CMPE_Building">
+		<input type="submit" class="btn btn-primary" value="Image CMPE Building">  </input>
+		</form>
+		<br/>
+		<br/>
+		<br/>
+			<form action="./app/image_library">
+		<input type="submit" class="btn btn-primary" value="Image Dr. MLK Library">  </input>
+		</form>
+	</div>
+
+	<div class = "col-md-4">
+		<p> Image Loaded from: <span id="source"> </span>{{key}}</p>
+		
+		<img src="data:;base64,{{ image }}" alt="image" height="200" width="200" />
+	</div>
+
+
+</div>
+
+
+</body>
+</html>
